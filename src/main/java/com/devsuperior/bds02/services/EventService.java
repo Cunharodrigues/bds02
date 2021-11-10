@@ -7,8 +7,10 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.devsuperior.bds02.dto.EventDTO;
+import com.devsuperior.bds02.entities.City;
 import com.devsuperior.bds02.entities.Event;
 import com.devsuperior.bds02.repositories.EventRepository;
+
 
 @Service
 public class EventService {
@@ -27,9 +29,10 @@ public class EventService {
 	public EventDTO insert(EventDTO dto) {
 		Event entity = new Event();
 		entity.setName(dto.getName());
-		/*entity.setCity(new City(dto.getCityId(), null));*/
+		entity.setDate(dto.getDate());
+		entity.setCity(new City(dto.getCityId(), null));
 		entity = repository.save(entity);
 		return new EventDTO(entity);
 	}
-
+		
 }

@@ -23,4 +23,5 @@ public class CityController {
 		List<CityDTO> list = service.findAll();
 		return ResponseEntity.ok().body(list);
 	}
+		
 }

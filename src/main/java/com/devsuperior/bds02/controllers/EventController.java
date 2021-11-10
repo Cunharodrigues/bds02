@@ -39,10 +39,5 @@ public class EventController {
 				.buildAndExpand(dto.getId()).toUri();
 		return ResponseEntity.created(uri).body(dto);
 	}
-	
-	/*@PutMapping(value = "/events/{id}")
-	public ResponseEntity<EventDTO> update(@PathVariable Long id, @RequestBody EventDTO dto) {
-		dto = service.update(id, dto);
-		return ResponseEntity.ok().body(dto);
-	}*/
+		
 }
