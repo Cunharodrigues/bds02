@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.devsuperior.bds02.dto.EventDTO;
 import com.devsuperior.bds02.entities.City;
 import com.devsuperior.bds02.entities.Event;
+import com.devsuperior.bds02.repositories.CityRepository;
 import com.devsuperior.bds02.repositories.EventRepository;
 import com.devsuperior.bds02.services.exceptions.ResourceNotFoundException;
 
@@ -19,6 +20,9 @@ public class EventService {
 	
 	@Autowired
 	private EventRepository repository;
+	
+	@Autowired
+	private CityRepository repositoryCity;
 
 	@Transactional(readOnly = true)
 	public Page<EventDTO> findAll(Pageable pageable) {

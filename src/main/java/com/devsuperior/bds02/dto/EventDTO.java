@@ -15,6 +15,7 @@ public class EventDTO implements Serializable {
 	private Long cityId;
 	
 	
+	
 	public EventDTO() {
 	}
 
