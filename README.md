@@ -11,5 +11,6 @@ https://www.getpostman.com/collections/c347ea3428d6b199b391
 
 Este é um sistema de eventos e cidades com uma relação N-1 entre eles:
 
+https://github.com/Cunharodrigues/Desafiobootcamp_1/issues/1#issue-1053624902
 
 Mínimo para aprovação: 4/6
